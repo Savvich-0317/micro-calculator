@@ -96,10 +96,11 @@ namespace calculator
             
         }
 
-        Form2 About = new Form2();
+       
 
         private void button12_Click(object sender, EventArgs e)
         {
+            Form2 About = new Form2();
             About.Show();
         }
 
