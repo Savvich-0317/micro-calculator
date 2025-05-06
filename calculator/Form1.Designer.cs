@@ -55,7 +55,7 @@
             this.textBox1.Location = new System.Drawing.Point(0, 0);
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(171, 20);
+            this.textBox1.Size = new System.Drawing.Size(172, 20);
             this.textBox1.TabIndex = 0;
             // 
             // button1
@@ -278,7 +278,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form1";
-            this.Text = "mcrclc";
+            this.Text = "MicroCalc v1,4";
             this.ResumeLayout(false);
             this.PerformLayout();
 
