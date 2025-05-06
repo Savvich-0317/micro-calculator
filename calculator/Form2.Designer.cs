@@ -81,9 +81,9 @@
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
             this.label3.Location = new System.Drawing.Point(12, 165);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(225, 24);
+            this.label3.Size = new System.Drawing.Size(116, 24);
             this.label3.TabIndex = 5;
-            this.label3.Text = "View a repo! (whitout css)";
+            this.label3.Text = "View a repo!";
             // 
             // button2
             // 
