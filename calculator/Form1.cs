@@ -83,8 +83,13 @@ namespace calculator
 
         private void button19_Click(object sender, EventArgs e)
         {
-            text = text + ",";
-            textBox1.Text = text;
+            if (text.Contains(',')==false)
+            {
+
+                text = text + ",";
+                textBox1.Text = text;
+            }
+            
         }
 
         private void button11_Click(object sender, EventArgs e)
