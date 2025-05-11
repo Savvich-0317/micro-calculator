@@ -121,37 +121,41 @@ namespace calculator
 
         private void button14_Click(object sender, EventArgs e)
         {
-            if (dos == "*")
+            if (text2 != "" && text != "")
             {
 
 
-                text = Convert.ToString(Convert.ToDouble(text2) * Convert.ToDouble(text));
-                textBox1.Text = text;
-                dos = "";
+                if (dos == "*")
+                {
+
+
+                    text = Convert.ToString(Convert.ToDouble(text2) * Convert.ToDouble(text));
+                    textBox1.Text = text;
+                    dos = "";
+                }
+                if (dos == "-")
+                {
+
+
+                    text = Convert.ToString(Convert.ToDouble(text2) - Convert.ToDouble(text));
+                    textBox1.Text = text;
+                    dos = "";
+                }
+                if (dos == "+")
+                {
+
+
+                    text = Convert.ToString(Convert.ToDouble(text2) + Convert.ToDouble(text));
+                    textBox1.Text = text;
+                    dos = "";
+                }
+                if (dos == "/")
+                {
+                    text = Convert.ToString(Convert.ToDouble(text2) / Convert.ToDouble(text));
+                    textBox1.Text = text;
+                    dos = "";
+                }
             }
-            if (dos == "-")
-            {
-
-
-                text = Convert.ToString(Convert.ToDouble(text2) - Convert.ToDouble(text));
-                textBox1.Text = text;
-                dos = "";
-            }
-            if (dos == "+")
-            {
-
-
-                text = Convert.ToString(Convert.ToDouble(text2) + Convert.ToDouble(text));
-                textBox1.Text = text;
-                dos = "";
-            }
-            if (dos == "/")
-            {
-                text = Convert.ToString(Convert.ToDouble(text2) / Convert.ToDouble(text));
-                textBox1.Text = text;
-                dos = "";
-            }
-
         }
         private void button15_Click(object sender, EventArgs e)
         {
@@ -184,6 +188,43 @@ namespace calculator
             textBox1.Text = text;
         }
 
+        private void button20_Click(object sender, EventArgs e)
+        {
+            text2 = text;
+            text = Convert.ToString(Convert.ToDouble(text2) / 100);
+            textBox1.Text = text;
+        }
 
+        private void button21_Click(object sender, EventArgs e)
+        {
+            text2 = text;
+            text = Convert.ToString(Math.Sqrt(Convert.ToDouble(text2)));
+            textBox1.Text = text;
+        }
+
+        private void button22_Click(object sender, EventArgs e)
+        {
+            if (text.Length >= 1)
+            {
+
+
+                if (text[0] != '-')
+                {
+                    text = '-' + text;
+                }
+                else
+                {
+                    text = text.Substring(1, text.Length - 1);
+                }
+            }
+            textBox1.Text = text;
+
+        }
+
+        private void button23_Click(object sender, EventArgs e)
+        {
+            text = "";
+            textBox1.Text = text;
+        }
     }
 }
