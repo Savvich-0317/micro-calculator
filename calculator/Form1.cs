@@ -300,16 +300,16 @@ namespace calculator
 
                 ToolTip1.SetToolTip(this.button13, "Multiplies.");
                 ToolTip1.SetToolTip(this.button18, "Divides.");
-                ToolTip1.SetToolTip(this.button16, "Subtracts");
-                ToolTip1.SetToolTip(this.button17, "Summarizes");
+                ToolTip1.SetToolTip(this.button16, "Subtracts.");
+                ToolTip1.SetToolTip(this.button17, "Summarizes.");
                 ToolTip1.SetToolTip(this.button20, "Calculates one percent.");
 
                 ToolTip1.SetToolTip(this.button11, "Clears one character of the active field.");
                 ToolTip1.SetToolTip(this.button23, "Clears the active field.");
                 ToolTip1.SetToolTip(this.button15, "Cleans everything.");
-                ToolTip1.SetToolTip(this.button21, "Calculates the square root");
-                ToolTip1.SetToolTip(this.button19, "Adds the fractional part of the active field");
-                ToolTip1.SetToolTip(this.button22, "Inverts sign");
+                ToolTip1.SetToolTip(this.button21, "Calculates the square root.");
+                ToolTip1.SetToolTip(this.button19, "Adds the fractional part of the active field.");
+                ToolTip1.SetToolTip(this.button22, "Inverts sign.");
 
 
             }
