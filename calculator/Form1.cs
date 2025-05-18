@@ -18,7 +18,7 @@ namespace calculator
 
 
             InitializeComponent();
-            
+
 
         }
         string text = "";
@@ -88,25 +88,26 @@ namespace calculator
 
         private void button19_Click(object sender, EventArgs e)
         {
-            if (text.Contains(',')==false)
+            if (text.Contains(',') == false)
             {
 
                 text = text + ",";
                 textBox1.Text = text;
             }
-            
+
         }
 
         private void button11_Click(object sender, EventArgs e)
         {
-            if (text.Length != 0){
+            if (text.Length != 0)
+            {
                 text = text.Substring(0, text.Length - 1);
                 textBox1.Text = text;
             }
-            
+
         }
 
-       
+
 
         private void button12_Click(object sender, EventArgs e)
         {
@@ -117,7 +118,7 @@ namespace calculator
 
         private void button14_Click(object sender, EventArgs e)
         {
-            if(text == "," || text == "")
+            if (text == "," || text == "")
             {
                 text = text = "";
                 textBox1.Text = "Wrong format";
@@ -291,33 +292,43 @@ namespace calculator
         {
 
         }
+        //НЕМОЕ НАЧАЛО
+        private System.Windows.Forms.ToolTip ToolTip1 = new System.Windows.Forms.ToolTip();
+        // Объявляем как поле класса, так как иначе при нажатии на checkbox будет каждый раз создаваться новый tooltip
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
-            if (checkBox1.Checked == true)
+            // Список всех кнопок с подсказками
+            var buttonsWithTooltips = new[]
             {
-                System.Windows.Forms.ToolTip ToolTip1 = new System.Windows.Forms.ToolTip();
+            (button: button13, tip: "Multiplies."),
+            (button: button18, tip: "Divides."),
+            (button: button16, tip: "Subtracts."),
+            (button: button17, tip: "Summarizes."),
+            (button: button20, tip: "Calculates one percent."),
+            (button: button11, tip: "Clears one character of the active field."),
+            (button: button23, tip: "Clears the active field."),
+            (button: button15, tip: "Cleans everything."),
+            (button: button21, tip: "Calculates the square root."),
+            (button: button19, tip: "Adds the fractional part of the active field."),
+            (button: button22, tip: "Inverts sign.")
+            };
 
-                ToolTip1.SetToolTip(this.button13, "Multiplies.");
-                ToolTip1.SetToolTip(this.button18, "Divides.");
-                ToolTip1.SetToolTip(this.button16, "Subtracts.");
-                ToolTip1.SetToolTip(this.button17, "Summarizes.");
-                ToolTip1.SetToolTip(this.button20, "Calculates one percent.");
-
-                ToolTip1.SetToolTip(this.button11, "Clears one character of the active field.");
-                ToolTip1.SetToolTip(this.button23, "Clears the active field.");
-                ToolTip1.SetToolTip(this.button15, "Cleans everything.");
-                ToolTip1.SetToolTip(this.button21, "Calculates the square root.");
-                ToolTip1.SetToolTip(this.button19, "Adds the fractional part of the active field.");
-                ToolTip1.SetToolTip(this.button22, "Inverts sign.");
-
-
+            if (checkBox1.Checked)
+            {
+                foreach (var btn in buttonsWithTooltips)
+                {
+                    ToolTip1.SetToolTip(btn.button, btn.tip);
+                }
             }
             else
             {
-                
+                foreach (var btn in buttonsWithTooltips)
+                {
+                    ToolTip1.SetToolTip(btn.button, "");
+                }
             }
-            
+            //НЕМОЕ КОНЕЦ
         }
     }
 }

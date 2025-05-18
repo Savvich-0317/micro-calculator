@@ -369,7 +369,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form1";
-            this.Text = "MicroCalc v1.5";
+            this.Text = "MicroCalc v1.6";
             this.ResumeLayout(false);
             this.PerformLayout();
 
