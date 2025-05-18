@@ -117,7 +117,7 @@ namespace calculator
 
         private void button14_Click(object sender, EventArgs e)
         {
-            if(text == ",")
+            if(text == "," || text == "")
             {
                 text = text = "";
                 textBox1.Text = "Wrong format";
@@ -163,7 +163,7 @@ namespace calculator
 
         private void button13_Click(object sender, EventArgs e)
         {
-            if (text == ",")
+            if (text == "," || text == "")
             {
                 text = text2 = "";
                 textBox1.Text = "Wrong format";
@@ -186,7 +186,7 @@ namespace calculator
 
         private void button16_Click(object sender, EventArgs e)
         {
-            if (text == ",")
+            if (text == "," || text == "")
             {
                 text = text2 = "";
                 textBox1.Text = "Wrong format";
@@ -202,7 +202,7 @@ namespace calculator
 
         private void button17_Click(object sender, EventArgs e)
         {
-            if (text == ",")
+            if (text == "," || text == "")
             {
                 text = text2 = "";
                 textBox1.Text = "Wrong format";
@@ -218,7 +218,7 @@ namespace calculator
 
         private void button18_Click(object sender, EventArgs e)
         {
-            if (text == ",")
+            if (text == "," || text == "")
             {
                 text = text2 = "";
                 textBox1.Text = "Wrong format";
@@ -234,7 +234,7 @@ namespace calculator
 
         private void button20_Click(object sender, EventArgs e)
         {
-            if (text == ",")
+            if (text == "," || text == "")
             {
                 text = text2 = "";
                 textBox1.Text = "Wrong format";
@@ -248,7 +248,7 @@ namespace calculator
         }
         private void button21_Click(object sender, EventArgs e)
         {
-            if (text == ",")
+            if (text == "," || text == "")
             {
                 text = text2 = "";
                 textBox1.Text = "Wrong format";
