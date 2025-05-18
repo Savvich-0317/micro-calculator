@@ -114,18 +114,16 @@ namespace calculator
             About.Show();
         }
 
-        private void button13_Click(object sender, EventArgs e)
-        {
-
-            text2 = text;
-            dos = "*";
-            text = "";
-            textBox1.Text = text;
-
-        }
 
         private void button14_Click(object sender, EventArgs e)
         {
+            if(text == ",")
+            {
+                text = text = "";
+                textBox1.Text = "Wrong format";
+                return;
+            }
+
             if (text2 != "" && text != "")
             {
 
@@ -162,6 +160,23 @@ namespace calculator
                 }
             }
         }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            if (text == ",")
+            {
+                text = text2 = "";
+                textBox1.Text = "Wrong format";
+            }
+            else
+            {
+
+                text2 = text;
+                dos = "*";
+                text = "";
+                textBox1.Text = text;
+            }
+        }
         private void button15_Click(object sender, EventArgs e)
         {
             text = "";
@@ -171,41 +186,81 @@ namespace calculator
 
         private void button16_Click(object sender, EventArgs e)
         {
-            text2 = text;
-            dos = "-";
-            text = "";
-            textBox1.Text = text;
+            if (text == ",")
+            {
+                text = text2 = "";
+                textBox1.Text = "Wrong format";
+            }
+            else
+            {
+                text2 = text;
+                dos = "-";
+                text = "";
+                textBox1.Text = text;
+            }
         }
 
         private void button17_Click(object sender, EventArgs e)
         {
-            text2 = text;
-            dos = "+";
-            text = "";
-            textBox1.Text = text;
+            if (text == ",")
+            {
+                text = text2 = "";
+                textBox1.Text = "Wrong format";
+            }
+            else
+            {
+                text2 = text;
+                dos = "+";
+                text = "";
+                textBox1.Text = text;
+            }
         }
 
         private void button18_Click(object sender, EventArgs e)
         {
-            text2 = text;
-            dos = "/";
-            text = "";
-            textBox1.Text = text;
+            if (text == ",")
+            {
+                text = text2 = "";
+                textBox1.Text = "Wrong format";
+            }
+            else
+            {
+                text2 = text;
+                dos = "/";
+                text = "";
+                textBox1.Text = text;
+            }
         }
 
         private void button20_Click(object sender, EventArgs e)
         {
-            text2 = text;
-            text = Convert.ToString(Convert.ToDouble(text2) / 100);
-            textBox1.Text = text;
+            if (text == ",")
+            {
+                text = text2 = "";
+                textBox1.Text = "Wrong format";
+            }
+            else
+            {
+                text2 = text;
+                text = Convert.ToString(Convert.ToDouble(text2) / 100);
+                textBox1.Text = text;
+            }
         }
-
         private void button21_Click(object sender, EventArgs e)
         {
-            text2 = text;
-            text = Convert.ToString(Math.Sqrt(Convert.ToDouble(text2)));
-            textBox1.Text = text;
+            if (text == ",")
+            {
+                text = text2 = "";
+                textBox1.Text = "Wrong format";
+            }
+            else
+            {
+                text2 = text;
+                text = Convert.ToString(Math.Sqrt(Convert.ToDouble(text2)));
+                textBox1.Text = text;
+            }
         }
+
 
         private void button22_Click(object sender, EventArgs e)
         {
