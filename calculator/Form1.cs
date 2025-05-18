@@ -12,10 +12,14 @@ namespace calculator
 {
     public partial class Form1 : Form
     {
+
         public Form1()
         {
+
+
             InitializeComponent();
             
+
         }
         string text = "";
         string text2 = "";
@@ -24,6 +28,7 @@ namespace calculator
         {
             text = text + "1";
             textBox1.Text = text;
+
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -225,6 +230,25 @@ namespace calculator
         {
             text = "";
             textBox1.Text = text;
+        }
+
+        private void toolTip1_Popup(object sender, PopupEventArgs e)
+        {
+
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox1.Checked == true)
+            {
+                System.Windows.Forms.ToolTip ToolTip1 = new System.Windows.Forms.ToolTip();
+
+                ToolTip1.SetToolTip(this.button13, "Multiplies");
+            }
+            else
+            {
+
+            }
         }
     }
 }
