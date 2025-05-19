@@ -57,7 +57,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(229, 24);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Open microcalculator v1.5";
+            this.label1.Text = "Open microcalculator v1.6";
             // 
             // label2
             // 
