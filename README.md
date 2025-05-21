@@ -1,5 +1,6 @@
-MicroCalculator
-
-✔ Lightweight & fast (Maybe)
-✔ Minimal design
-✔ Only for Windows
+**MicroCalculator**  
+---  
+*Calculator that is actually small.*  
+Lightweight & fast(not sure about this)
+Minimal design  
+Only for Windows    
