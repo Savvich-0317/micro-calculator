@@ -1,2 +1,5 @@
-Calculator that is actually small.
-Only for windows.
+MicroCalculator
+
+✔ Lightweight & fast (Maybe)
+✔ Minimal design
+✔ Only for Windows
