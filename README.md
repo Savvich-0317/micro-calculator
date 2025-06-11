@@ -5,7 +5,10 @@
  *Calculator that is actually small.*  
  Lightweight & fast(not sure about this)  
  Minimal design 250x250  
- Only for Windows  
+ Only for Windows*  
 
+
+   
+*Okay, you can actually try this on Linux using mono, but there's no guarantee it will work.
 
 
